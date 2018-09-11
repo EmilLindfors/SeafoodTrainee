@@ -92,6 +92,11 @@ export const ProductPageTemplate = ({
                 className="full-width-image-container"
                 style={{ backgroundImage: `url(${fullImage})` }}
               />
+              <h2 className="has-text-weight-semibold is-size-2">
+                {pricing.heading}
+              </h2>
+              <p className="is-size-5">{pricing.description}</p>
+              <Pricing data={pricing.plans} />
             </div>
           </div>
         </div>
